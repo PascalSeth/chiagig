@@ -2,26 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.textLink{
+  @apply hover:cursor-pointer p-[2vh] font-semibold hover:text-green-600
+}
+.textLinkpop{
+  @apply hover:cursor-pointer p-[2vh] font-semibold hover:bg-green-500 hover:text-white
+}
+.headerButton>button{
+@apply text-center items-center
+}
+.headerButton{
+  @apply bg-green-400 hover:bg-green-300 hover:cursor-pointer text-white font-medium  p-[0.5vh] rounded-md w-[8vw] items-center text-center
+}
+.pageslink{
+  @apply p-[1.7vh] lg:w-fit text-[13px] font-semibold text-gray-500 hover:cursor-pointer hover:bg-gray-200 
+}
+.sidebg{
+  background-image: url("https://img.freepik.com/free-photo/business-job-interview-concept_1421-77.jpg");
+  background-size: cover;
+  object-fit: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  
+} 
+.showcasepic{
+  background-image: url("https://wallpapercave.com/wp/abLyE7p.jpg");
+  background-size: cover;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100px;
+
+} 
+.Techshowcasepic{
+  background-image: url("https://media.istockphoto.com/id/1302189748/photo/digital-cyberspace-with-particles-and-digital-data-network-connections-high-speed-connection.jpg?b=1&s=612x612&w=0&k=20&c=bwDXyw4wOGrBQOQ2Z15DUApR8H2MNogIaIIZp9jnuoQ=");
+  background-size: cover;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100px;
+
+} 
+.Writeshowcasepic{
+  background-image: url("https://wallpapers.com/images/hd/cute-writing-on-notebook-u71y9vjvnxufsdkt.jpg");
+  background-size: cover;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100px;
+} 
+.Digitalshowcasepic{
+  background-image: url("https://media.istockphoto.com/id/1331138803/photo/business-technology-internet-and-network-concept-digital-marketing-content-planning.webp?b=1&s=170667a&w=0&k=20&c=hJWnOpYRfYCdclYlrk8sR1JsNd5Otea7VTtUNUnT1Y4=");
+  background-size: cover;
+  object-fit: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 100px;
+
+} 
+.Aishowcasepic{
+  background-image: url("https://img.freepik.com/premium-vector/artificial-intelligence-ai-chipset-circuit-board-futuristic-technology-concept_184920-38.jpg");
+  background-size: cover;
+  object-fit: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 100px;
+} 
+.Photoshowcasepic{
+  background-image: url("https://img.freepik.com/premium-photo/black-camera-with-word-co-it_662214-66139.jpg");
+  background-size: cover;
+  object-fit: contain;
+  background-position: center left;
+  background-repeat: no-repeat;
+  min-height: 100px;
+} 
+.Businessshowcasepic{
+  background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2xvYmFsJTIwYnVzaW5lc3N8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  object-fit: contain;
+  background-position: center left;
+  background-repeat: no-repeat;
+  min-height: 100px;
+} 
+.Videoshowcasepic{
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/25103048/thumb/1.jpg?ip=x480");
+  background-size: cover;
+  object-fit: contain;
+  background-position: center left;
+  background-repeat: no-repeat;
+  min-height: 100px;
+} 
+@keyframes rainbow {
+  0% { color: #ff0000; } /* Red */
+  16.666% { color: #ff8000; } /* Orange */
+  33.333% { color: #ffff00; } /* Yellow */
+  50% { color: #80ff00; } /* Lime Green */
+  66.666% { color: #00ff80; } /* Aqua */
+  83.333% { color: #0080ff; } /* Blue */
+  100% { color: #8000ff; } /* Purple */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+.rainbow-text {
+  display: inline-block;
+  animation: rainbow 6s linear ;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
+.ConceptImage{
+  @apply object-fill h-[16vh]  md:h-[19vh] min-h-[100px] lg:w-[100%] lg:h-[25vh]  xl:h-[26vh] rounded-t-3xl max-h-[800px]
+}
+.ConceptImagedescript{
+  @apply object-fill h-[16vh]  md:h-[19vh] min-h-[100px] lg:w-[100%] lg:h-[25vh]  xl:h-[26vh] rounded-t-3xl max-h-[800px]
+
+}
+.Gridcell{
+  @apply grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4
+}
+.Gridcelldescript{
+  @apply grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full
+}
+  
+
+
